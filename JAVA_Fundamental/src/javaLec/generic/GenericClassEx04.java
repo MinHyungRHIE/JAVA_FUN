@@ -8,7 +8,7 @@ class Juice{
 		this.status = status;
 	}
 
-	private String getStatus() {
+	String getStatus() {
 		return status;
 	}
 
@@ -46,4 +46,12 @@ public class GenericClassEx04 {
 		}
 		return new Juice(tmp);
 	}*/
+	
+	public static void main(String[] args) {
+		FruitBox<Fruit> box = new FruitBox<Fruit>();
+		box.add(new Apple());
+		box.add(new Banana());
+		System.out.println(makeJuice(box).getStatus());
+		
+	}
 }

@@ -1,3 +1,5 @@
+package javaLec.annotation;
+
 import java.lang.reflect.Method;
 
 public class Service {

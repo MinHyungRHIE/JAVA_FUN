@@ -13,7 +13,7 @@ public class GenericWildCard {
 	static Juice makeJuice(FruitBox<? extends Fruit> box) {
 		String tmp = "";
 		for(Fruit f : box.getList()) {
-			tmp += f = " ";
+			tmp += f;
 		}
 		return new Juice(tmp);
 	}
