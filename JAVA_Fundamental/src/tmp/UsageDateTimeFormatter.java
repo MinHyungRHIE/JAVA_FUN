@@ -1,4 +1,4 @@
-package javaFun.chapC.lecture17.usefulClasses;
+package tmp;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -7,7 +7,7 @@ public class UsageDateTimeFormatter {
 
 	public static void main(String[] args) {
 		
-		//ì•„ë˜ì™€ ê°™ì´ DateTimeFormatterì—ëŠ” ìƒìˆ˜ë¡œ ì •ì˜ëœ ì—¬ëŸ¬ í˜•ì‹ë“¤ì´ ìˆë‹¤.
+		//?•„?˜?? ê°™ì´ DateTimeFormatter?—?Š” ?ƒ?ˆ˜ë¡? ? •?˜?œ ?—¬?Ÿ¬ ?˜•?‹?“¤?´ ?ˆ?‹¤.
 		DateTimeFormatter example = DateTimeFormatter.ISO_LOCAL_DATE;
 		
 		LocalDateTime now = LocalDateTime.now();
@@ -15,8 +15,8 @@ public class UsageDateTimeFormatter {
 		String yyyymmdd = example.format(now);
 		System.out.println(yyyymmdd);
 		
-		//ì¶œë ¥í˜•ì‹ ì§ì ‘ ì •ì˜
-		DateTimeFormatter customFormat = DateTimeFormatter.ofPattern("yyyyë…„ MMì›” ddì¼");
+		//ì¶œë ¥?˜•?‹ ì§ì ‘ ? •?˜
+		DateTimeFormatter customFormat = DateTimeFormatter.ofPattern("yyyy?…„ MM?›” dd?¼");
 		
 		String result = customFormat.format(now);
 		System.out.println(result);

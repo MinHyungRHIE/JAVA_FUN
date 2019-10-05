@@ -1,16 +1,16 @@
-package javaFun.chapC.lecture17.usefulClasses;
+package tmp;
 
 import java.text.ChoiceFormat;
 import java.text.MessageFormat;
 
 public class ChoiceMessageFormat {
 	public static void main(String[] args) {
-		/* ChoiceFormat ì‚¬ìš©í•˜ê¸°
-		 * ChoiceFormatì€ íŠ¹ì • ë²”ìœ„ì— ì†í•˜ëŠ” ê°’ì„ ë¬¸ìì—´ë¡œ ë³€í™˜í•´ì¤€ë‹¤.
-		 * ifë¬¸ì´ë‚˜ switchë¬¸ë³´ë‹¤ ê°„ë‹¨í•˜ê³  ì§ê´€ì ìœ¼ë¡œ ë§Œë“¤ ìˆ˜ ìˆë‹¤.
+		/* ChoiceFormat ?‚¬?š©?•˜ê¸?
+		 * ChoiceFormat?? ?Š¹? • ë²”ìœ„?— ?†?•˜?Š” ê°’ì„ ë¬¸ì?—´ë¡? ë³??™˜?•´ì¤??‹¤.
+		 * ifë¬¸ì´?‚˜ switchë¬¸ë³´?‹¤ ê°„ë‹¨?•˜ê³? ì§ê?? ?œ¼ë¡? ë§Œë“¤ ?ˆ˜ ?ˆ?‹¤.
 		 */
-		double[] limits = new double[] {60,70,80,90}; //ë°˜ë“œì‹œ ì˜¤ë¦„ì°¨ìˆœì´ì–´ì•¼ í•œë‹¤.
-		String[] grades = new String[] {"D","C","B","A"}; //limits, gradesê°„ì˜ ìˆœì„œì™€ ê°œìˆ˜ë¥¼ ë§ì¶”ì–´ì•¼ í•œë‹¤.
+		double[] limits = new double[] {60,70,80,90}; //ë°˜ë“œ?‹œ ?˜¤ë¦„ì°¨?ˆœ?´?–´?•¼ ?•œ?‹¤.
+		String[] grades = new String[] {"D","C","B","A"}; //limits, gradesê°„ì˜ ?ˆœ?„œ?? ê°œìˆ˜ë¥? ë§ì¶”?–´?•¼ ?•œ?‹¤.
 		int[] scores = {100, 95, 88, 70, 52, 60, 72, 62};
 		
 		ChoiceFormat form = new ChoiceFormat(limits,grades);
@@ -21,7 +21,7 @@ public class ChoiceMessageFormat {
 		
 		System.out.println("-------------------------------------------");
 		
-		//Stringìœ¼ë¡œ íŒ¨í„´ì„ ë§Œë“¤ ìˆ˜ë„ ìˆëŠ”ë° êµ¬ë¶„ìë¡œ '#'ì™€ '<' ë‘ ê°€ì§€ë¥¼ ì œê³µí•œë‹¤. (limit#value), #ì€ í¬í•¨, <ì€ ë¯¸í¬í•¨
+		//String?œ¼ë¡? ?Œ¨?„´?„ ë§Œë“¤ ?ˆ˜?„ ?ˆ?Š”?° êµ¬ë¶„?ë¡? '#'?? '<' ?‘ ê°?ì§?ë¥? ? œê³µí•œ?‹¤. (limit#value), #?? ?¬?•¨, <?? ë¯¸í¬?•¨
 		String pattern = "60#D|70#C|80<B|90#A";
 		int[] numbers = { 91, 90, 80 ,88, 70, 52 ,60, 62};
 		
@@ -33,9 +33,9 @@ public class ChoiceMessageFormat {
 		
 		System.out.println("-------------------------------------------");
 		
-		/* MessageFormat ì‚¬ìš©í•˜ê¸°
-		 * ë°ì´í„°ê°€ ë“¤ì–´ê°ˆ ìë¦¬ë¥¼ ë§ˆë ¨í•´ ë†“ì€ ì–‘ì‹ì„ ë¯¸ë¦¬ ì‘ì„±í•˜ê¸°
-		 * ë‹¤ìˆ˜ì˜ ë°ì´í„°ë¥¼ ê°™ì€ ì–‘ì‹ìœ¼ë¡œ ì¶œë ¥í•  ë•Œ ì¢‹ë‹¤.
+		/* MessageFormat ?‚¬?š©?•˜ê¸?
+		 * ?°?´?„°ê°? ?“¤?–´ê°? ?ë¦¬ë?? ë§ˆë ¨?•´ ?†“?? ?–‘?‹?„ ë¯¸ë¦¬ ?‘?„±?•˜ê¸?
+		 * ?‹¤?ˆ˜?˜ ?°?´?„°ë¥? ê°™ì? ?–‘?‹?œ¼ë¡? ì¶œë ¥?•  ?•Œ ì¢‹ë‹¤.
 		 */
 		String msg = "Name : {0} \nTel : {1} \nAge : {2}";
 		

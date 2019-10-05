@@ -1,4 +1,4 @@
-package javaFun.chapC.lecture17.usefulClasses;
+package tmp;
 
 import java.time.Instant;
 import java.time.LocalDate;
@@ -9,15 +9,15 @@ import java.time.ZonedDateTime;
 
 /**
 * LocalDate + LocalTime = LocalDateTime
-* LocalDateTime + ì‹œê°„ëŒ€ = ZonedDateTime
+* LocalDateTime + ?‹œê°„ë? = ZonedDateTime
 * 
-* LocalDate, LocalTime, LocalDateTime, ZonedDateTime, Instantì˜ ë‚ ì§œì™€ ì‹œê°„ì„ í‘œí˜„í•˜ê¸° ìœ„í•œ í´ë˜ìŠ¤ë“¤ì€
-* ëª¨ë‘ Temporal, TemporalAccessor, TemporalAdjusterì¸í„°í˜ì´ìŠ¤ë¥¼ êµ¬í˜„í–ˆìŒ
+* LocalDate, LocalTime, LocalDateTime, ZonedDateTime, Instant?˜ ?‚ ì§œì? ?‹œê°„ì„ ?‘œ?˜„?•˜ê¸? ?œ„?•œ ?´?˜?Š¤?“¤??
+* ëª¨ë‘ Temporal, TemporalAccessor, TemporalAdjuster?¸?„°?˜?´?Š¤ë¥? êµ¬í˜„?–ˆ?Œ
 */
 public class LocalZonedDateTime {
 	
 	public static void main(String[] args) {
-		//now(), of()ë¥¼ ì´ìš©í•´ ê°ì²´ ìƒì„±í•˜ê¸°
+		//now(), of()ë¥? ?´?š©?•´ ê°ì²´ ?ƒ?„±?•˜ê¸?
 		LocalDate date = LocalDate.now();
 		LocalTime time = LocalTime.now();
 		
@@ -27,13 +27,13 @@ public class LocalZonedDateTime {
 		
 		System.out.println(dateTimeInKr);
 
-		/*Instant ì‚¬ìš©í•˜ê¸°
-		 * InstantëŠ” ì—í¬í¬ íƒ€ì„(EPOCH TIME, 1970-01-01 00:00:00 UTC)ë¶€í„° ê²½ê³¼ëœ ì‹œê°„ì„ ë‚˜ë…¸ì´ˆ ë‹¨ìœ„ë¡œ í‘œí˜„
-		 * InstantëŠ” í•­ìƒ UTC(+00:00)ë¥¼ ê¸°ì¤€ìœ¼ë¡œ í•˜ê¸° ë•Œë¬¸ì— LocalTimeê³¼ ì°¨ì´ê°€ ìˆì„ ìˆ˜ ìˆë‹¤. (í•œêµ­ì€ 9ì‹œê°„ ì°¨ì´)
+		/*Instant ?‚¬?š©?•˜ê¸?
+		 * Instant?Š” ?—?¬?¬ ???„(EPOCH TIME, 1970-01-01 00:00:00 UTC)ë¶??„° ê²½ê³¼?œ ?‹œê°„ì„ ?‚˜?…¸ì´? ?‹¨?œ„ë¡? ?‘œ?˜„
+		 * Instant?Š” ?•­?ƒ UTC(+00:00)ë¥? ê¸°ì??œ¼ë¡? ?•˜ê¸? ?•Œë¬¸ì— LocalTimeê³? ì°¨ì´ê°? ?ˆ?„ ?ˆ˜ ?ˆ?‹¤. (?•œêµ??? 9?‹œê°? ì°¨ì´)
 		 * 
-		 * UTCëŠ” Coordinated Universal Timeì˜ ì•½ìë¡œ 'ì„¸ê³„ í˜‘ì •ì‹œ'ë¼ê³  í•˜ë©°, 
-		 * 1972ë…„ 1ì›” 1ì¼ë¶€í„° ì‹œí–‰ëœ êµ­ì œ í‘œì¤€ì‹œì´ë‹¤.
-		 * ì´ì „ì— ì‚¬ìš©ë˜ë˜ GMT(Greenwich Mean Time)ì™€ UTCëŠ” ê±°ì˜ ê°™ì§€ë§Œ, UTCê°€ ì¢€ ë” ì •í™•í•˜ë‹¤.
+		 * UTC?Š” Coordinated Universal Time?˜ ?•½?ë¡? '?„¸ê³? ?˜‘? •?‹œ'?¼ê³? ?•˜ë©?, 
+		 * 1972?…„ 1?›” 1?¼ë¶??„° ?‹œ?–‰?œ êµ?? œ ?‘œì¤??‹œ?´?‹¤.
+		 * ?´? „?— ?‚¬?š©?˜?˜ GMT(Greenwich Mean Time)?? UTC?Š” ê±°ì˜ ê°™ì?ë§?, UTCê°? ì¢? ?” ? •?™•?•˜?‹¤.
 		 * 
 		 * Instant --> Date : static Date from(Instant instant)
 		 * Date --> Instant : toInstant()
@@ -50,8 +50,8 @@ public class LocalZonedDateTime {
 		System.out.println(timestamp);
 
 		/*
-		 * with() : íŠ¹ì • í•„ë“œê°’ ë³€ê²½ 
-		 * plus(), minus() : íŠ¹ì • í•„ë“œê°’ì„ ë”í•˜ê±°ë‚˜ ëº„ ë•Œ
+		 * with() : ?Š¹? • ?•„?“œê°? ë³?ê²? 
+		 * plus(), minus() : ?Š¹? • ?•„?“œê°’ì„ ?”?•˜ê±°ë‚˜ ëº? ?•Œ
 		 * 
 		 */
 	}

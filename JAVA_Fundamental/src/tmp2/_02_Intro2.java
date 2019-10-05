@@ -1,11 +1,11 @@
-package javaFun.chapD.lecture18.collectionGeneric;
+package tmp2;
 
 public class _02_Intro2 {
 	
 	public static void main(String[] args) {
 		
 		int[] iArr = new int[] {4,2,10,1,5};
-		//ì˜¤ë¦„ì°¨ìˆœìœ¼ë¡œ ì •ë ¬í•˜ê³  ì‹¶ë‹¤.
+		//?˜¤ë¦„ì°¨?ˆœ?œ¼ë¡? ? •? ¬?•˜ê³? ?‹¶?‹¤.
 		for(int i = 0; i < iArr.length-1 ; i++) {
 			for(int j = i+1; j < iArr.length ; j++) {
 				if(iArr[i] > iArr[j]) {
@@ -20,8 +20,8 @@ public class _02_Intro2 {
 			System.out.println(iArr[i]);
 		}
 		
-		//Createìƒì„±, Readì½ê¸°, Updateìˆ˜ì •, Deleteì‚­ì œ ... ìë£Œêµ¬ì¡°ì˜ ê¸°ë³¸
-				//ìë£Œêµ¬ì¡° : ì–´ë–»ê²Œí•˜ë©´ ë°ì´í„°ë¥¼ íš¨ìœ¨ì ìœ¼ë¡œ ê´€ë¦¬í•  ìˆ˜ ìˆì„ê¹Œ
-				//Collection = ìë£Œêµ¬ì¡°
+		//Create?ƒ?„±, Read?½ê¸?, Update?ˆ˜? •, Delete?‚­? œ ... ?ë£Œêµ¬ì¡°ì˜ ê¸°ë³¸
+				//?ë£Œêµ¬ì¡? : ?–´?–»ê²Œí•˜ë©? ?°?´?„°ë¥? ?š¨?œ¨? ?œ¼ë¡? ê´?ë¦¬í•  ?ˆ˜ ?ˆ?„ê¹?
+				//Collection = ?ë£Œêµ¬ì¡?
 	}
 }
