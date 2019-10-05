@@ -1,8 +1,8 @@
-package javaLec.collection;
+package javaFun.chapD.lecture18.collectionGeneric;
 
 import java.util.Arrays;
 
-public class Intro2 {
+public class _03_Intro3 {
 	 public static void main(String[] args) {
 			int[] iArr = new int[] {4,2,10,1,5};
 			//오름차순으로 정렬하고 싶다.

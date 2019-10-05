@@ -1,6 +1,7 @@
-package javaLec.collection;
+package javaFun.chapD.lecture18.collectionGeneric;
 
-public class Intro {
+public class _02_Intro2 {
+	
 	public static void main(String[] args) {
 		
 		int[] iArr = new int[] {4,2,10,1,5};
@@ -22,6 +23,5 @@ public class Intro {
 		//Create생성, Read읽기, Update수정, Delete삭제 ... 자료구조의 기본
 				//자료구조 : 어떻게하면 데이터를 효율적으로 관리할 수 있을까
 				//Collection = 자료구조
-		
 	}
 }
