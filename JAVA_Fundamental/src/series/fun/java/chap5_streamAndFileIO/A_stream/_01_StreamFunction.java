@@ -59,7 +59,6 @@ public class _01_StreamFunction {
 		
 		/*** 카운트 ***/
 //		long count = stream.count();
-		
 		/*** 두 스트림의 연결 ***/
 //		String[] strArr1 = {"1","2","3"};
 //		String[] strArr2 = {"a","b","c"};

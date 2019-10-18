@@ -38,7 +38,7 @@ public class _03_final_Operate_Stream {
 		String result = strStrm.collect(Collectors.joining(",","{","}"));
 		System.out.println(result);
 		
-		//collect()를 쓰는 이유 : groupingBy(), partitioningBy
+		//collect()를 쓰는 이유 : groupingBy(), partitioningBy()
 		//groupingBy()는 Function으로 partitioningBy()는 Predicate로 분류한다. 결론적으론 동일
 		//partitioningBy()가 더 빠르다.
 		
