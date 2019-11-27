@@ -1,8 +1,0 @@
-/**
- * 
- */
-/**
- * @author RHIE
- *
- */
-package javaFun;
