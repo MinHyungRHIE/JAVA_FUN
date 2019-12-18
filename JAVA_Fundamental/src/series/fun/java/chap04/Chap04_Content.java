@@ -23,7 +23,7 @@ CHAP 04. 객체 지향 프로그래밍 심화
         - 자바 함수형 인터페이스 활용
 
     05. 클래스 정리하기
-        - 클래스 비교 : hashcode()와 equals()
+        - 클래스 비교 : equals()
         - 클래스 배열 : Arrays와 Collections
         - 클래스 정렬 : Comparator과 Comparable
 */
